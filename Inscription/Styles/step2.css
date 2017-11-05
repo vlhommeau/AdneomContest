@@ -1,0 +1,56 @@
+.mainLayoutStep2 {
+    background-color:white;
+    width: 100%;
+    height: 70%;
+}
+
+.backg {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    background-repeat:no-repeat;
+    background-image:url(Images/test-bg.jpg);
+    text-align: center;
+    alignment: center;
+    float: bottom;
+}
+
+.botStep2 {
+    position: absolute;
+    background-position: bottom;
+    bottom: 15%;
+    margin-left: 20%;
+}
+
+.selectedChar {
+    position: relative;
+    margin-bottom: 8%;
+    margin-left: 60%;
+}
+
+.charList {
+    background-color:white;
+    border-collapse: separate;
+    margin-left: 1%;
+    width: 100%;
+    max-height: 100%;
+}
+
+td {
+    padding: 6px;
+}
+
+.char {
+    cursor: pointer;
+}
+
+.validateNextButton {
+    background-color:white;
+    background-image:url(Images/validate-char.png);
+    border: none;
+    background-repeat:no-repeat;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-size: 100%;
+}

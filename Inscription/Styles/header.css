@@ -1,0 +1,99 @@
+#progressbar li {
+    font-family: 'Roboto', Helvetica;
+    list-style-type: none;
+    color: #797979;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 30%;
+    float: left;
+    position: relative;
+    font-weight: 500;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+#progressbar {
+    margin: 0 0 30px 0;
+    padding: 0;
+    overflow: hidden;
+    /* counter-reset: step; */
+}
+
+/*cercles*/
+#progressbar li:before {
+    width: 64px;
+    height: 64px;
+    font-size: 25px;
+    line-height: 64px;
+    border-radius: 50%;
+    border: 2px solid #797979;
+    display: block;
+    margin: auto auto auto auto;
+    background-color: white;
+}
+/* barre */
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background-color: #797979;
+    position: absolute;
+    top: 30px;
+    z-index: -1;
+    left: -55%;
+    transform: scale(1);
+}
+#progressbar li:first-child:before {
+    background-image: url(Images/first.png);
+    background-size: 64px 64px;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    content:"";
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+
+#progressbar li:nth-child(2):before {
+    background-image: url(Images/megaman.gif);
+    background-size: 64px 64px;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    content:"";
+}
+#progressbar li:nth-child(2):after {
+    content: "";
+}
+#progressbar li:last-child:before {
+    background-image: url(Images/last.png);
+    background-size: 60px 60px;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    content:"";
+}
+
+#adneom {
+    background-image: url(Images/adneom.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background-size: 60%;
+    margin-top: 19px;
+}

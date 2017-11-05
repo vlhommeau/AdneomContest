@@ -1,0 +1,41 @@
+.mainLayout {
+    color:black;
+    background-color:white;
+    background-attachment: scroll;
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    background-size: 60%;
+    background-image:url(Images/fond.jpeg);
+}
+
+.bot {
+    height: 60%;
+    background-image:url(Images/testsansconviction.jpg);
+    background-repeat:no-repeat;
+    background-position:left bottom;
+}
+
+.greenNextButton {
+    background-image:url(Images/Next2.jpg);
+    border: none;
+    background-repeat:no-repeat;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background-size: 100%;
+}
+
+body{
+    background:radial-gradient(#1d1f20,#000);
+    margin:0;
+}
+
+.sub {
+    margin-left: 2%;
+    width: 96%;
+    height: 96%;
+    cursor: pointer;
+    border: none;
+    background-size: 96%;
+    background-color: transparent;
+}
