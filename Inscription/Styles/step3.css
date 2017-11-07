@@ -36,3 +36,12 @@
     font-weight: 300;
     text-transform: uppercase;
 }
+
+.text-container3 {
+    position: relative;
+    color: black;
+    font-family: 'Cutive Mono', sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+}
