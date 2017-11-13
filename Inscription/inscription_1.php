@@ -6,6 +6,9 @@ use Utils\NameCheck;
 
 include 'header.php';
 
+$mail = isset($_POST['mail']) ? $_POST['mail'] : isset($_SESSION['mail']) ? $_SESSION['mail'] : '';
+$username = isset($_POST['username']) ? $_POST['username'] : isset($_SESSION['username']) ? $_SESSION['username'] : '';
+
 if (isset($_POST['mail']) && isset($_POST['username'])) {
 
     $mailCheck = new MailCheck($_POST['mail']);
@@ -65,7 +68,7 @@ if (isset($_POST['mail']) && isset($_POST['username'])) {
                             <span class="reg-text">Mail (Adneom email only)</span>
                             <div class="btn-danger reg-text"> <?= $error['mail'] ?>
                             </div>
-                            <input type="text" class="form-control reg-text" name="mail" id="mail" value="<?=$_POST['mail']?>" required/>
+                            <input type="text" class="form-control reg-text" name="mail" id="mail" value="<?=$mail?>" required/>
                         </div>
                     </div>
                     </br>
@@ -74,7 +77,7 @@ if (isset($_POST['mail']) && isset($_POST['username'])) {
                             <span class="reg-text">Username</span>
                             <div class="btn-danger reg-text"> <?= $error['username'] ?>
                             </div>
-                            <input type="text" class="form-control reg-text" name="username" id="username" value="<?=$_POST['username']?>" required/>
+                            <input type="text" class="form-control reg-text" name="username" id="username" value="<?=$username?>" required/>
                         </div>
                     </div>
                     </br>
