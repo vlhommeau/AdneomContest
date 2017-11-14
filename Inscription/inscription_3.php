@@ -45,8 +45,8 @@ if (isset($_POST['modify']) || isset($_POST['finalize'])) {
 
 ?>
 
-<div class="row" id="step" data-step="step3">
-    <div class="col-xs-6 description"><h4 style="color:#959595"><?= "Finalize your inscription" ?> :</h4>
+<div class="row back" id="step" data-step="step3">
+    <div class="col-xs-6 description">
         <div class="container">
             <form id="step3" method="post" name="step3" action="inscription_3.php">
                 <div class="infos">
@@ -54,21 +54,21 @@ if (isset($_POST['modify']) || isset($_POST['finalize'])) {
                 </div>
                 <div class="form-group">
                     </br>
-                    <div class="row-sm-5">
-                        <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6">
                             <div class="text-container3">
                                 </br>
                                 <label class="reg-text">Please validate your informations to suscribe: </label>
                             </div>
                         </div>
                     </div>
-                    <div class="row-sm-5">
-                        <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6">
                             <span class="reg-text">You are <?= $username ?></span></br>
                             <span class="reg-text">We can write you to <?= $mail ?></span></br>
                             <span class="reg-text">And you will be represented by <?= $avatar ?>!</span></br>
                         </div>
-                    </div>
+                    </div><br/>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="svg-wrapper reg-text">
