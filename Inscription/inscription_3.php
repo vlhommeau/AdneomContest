@@ -30,7 +30,7 @@ if (isset($_POST['modify']) || isset($_POST['finalize'])) {
     }
 
     if (isset($_POST['finalize'])) {
-        /** si pas de validation par mail du compte
+        /** si pas de validation par mail du compte **/
         $userTemp = FastMysqli::fastQuery("SELECT * FROM temp_signUp WHERE mail = '$mail'");
         $user = $userTemp->fetch_assoc();
         $name = $user['name'];
@@ -38,7 +38,7 @@ if (isset($_POST['modify']) || isset($_POST['finalize'])) {
         $avatar = $user['avatar'];
         if (!FastMysqli::fastQuery("INSERT INTO users ('mail', 'name', 'points', 'fk_avatar') VALUES ('$mail', '$name', 20, $avatar)")) {
             echo 'Error';
-        }*/
+        }
     }
 }
 
