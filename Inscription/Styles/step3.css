@@ -21,9 +21,6 @@
 }
 
 
-.back {
-    background-color: white;
-}
 
 .container {
     display: flex;
@@ -40,11 +37,35 @@
     text-transform: uppercase;
 }
 
-.text-container3 {
+.summary {
     position: relative;
     color: black;
     font-family: 'Cutive Mono', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 30px;
     -webkit-font-smoothing: antialiased;
+}
+
+.finalized {
+    position: relative;
+    color: black;
+    font-family: 'Cutive Mono', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 5%;
+}
+
+.participants {
+    position: relative;
+    color: black;
+    font-family: 'Cutive Mono', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    margin-left: 5%;
+}
+
+.back {
+    background-color: white;
 }

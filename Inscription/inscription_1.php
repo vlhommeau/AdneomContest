@@ -6,8 +6,10 @@ use Utils\NameCheck;
 
 include 'header.php';
 
+$_SESSION['step'] = 1;
 $mail = isset($_POST['mail']) ? $_POST['mail'] : isset($_SESSION['mail']) ? $_SESSION['mail'] : '';
 $username = isset($_POST['username']) ? $_POST['username'] : isset($_SESSION['username']) ? $_SESSION['username'] : '';
+$_SESSION['finalized'] = false;
 
 if (isset($_POST['mail']) && isset($_POST['username'])) {
 
@@ -74,7 +76,7 @@ if (isset($_POST['mail']) && isset($_POST['username'])) {
                     </br>
                     <div class="row">
                         <div class="col-lg-5 col-xs-12">
-                            <span class="reg-text">Username</span>
+                            <span class="reg-text">Username (your gamer name for the event)</span>
                             <div class="btn-danger reg-text"> <?= $error['username'] ?>
                             </div>
                             <input type="text" class="form-control reg-text" name="username" id="username" value="<?=$username?>" required/>
